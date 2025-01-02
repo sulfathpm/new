@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin1.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8e1d4; /* Soft pastel red background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #f7b7b7; /* Soft pastel red header */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .admin-dashboard {
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: #f9c4c4; /* Soft pastel red for the menu */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2); /* Light pink shadow */
+        }
+
+        .menu h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 15px 25px;
+            margin: 10px 0;
+            background-color: #f7a8a8; /* Slightly muted pastel red for the buttons */
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .menu a:hover {
+            background-color: #f47c7c; /* Brighter pastel red on hover */
+            transform: translateY(-2px);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .menu {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .menu a {
+                font-size: 1.2em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+    </div>
+    <div class="admin-dashboard">
+        <div class="menu">
+            <h3>Menu</h3>
+            <a href="customers.php">Customer Management</a>
+            <a href="staff.php">Staff Management</a>
+            <a href="communications.php">Communication</a>
+            <a href="manageDesign.php">Manage Designs</a>
+            <a href="manageFabric.php">Manage Fabric</a>
+            <a href="OrderManage.php">Order Management</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
